@@ -34,7 +34,7 @@ const WeatherDetails = () => {
     try {
       const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
       const response = await axios.get(
-        `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&hours=10`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&hours=10`
       );
       setWeatherData(response.data);
       handleAlerts(response.data.alerts);
