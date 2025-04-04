@@ -18,13 +18,13 @@ const Weather = () => {
           `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`
         );
         setWeatherData((prev) => ({ ...prev, [city]: response.data }));
+        console.log(weatherData);
       } catch (err) {
         setError("Failed to fetch weather data");
       }
     };
 
     const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
-    console.log("API Key:", apiKey);
     fetchWeather("London", apiKey);
     fetchWeather("Toronto", apiKey);
     fetchWeather("Tokyo", apiKey);
