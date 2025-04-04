@@ -15,7 +15,7 @@ const Weather = () => {
     const fetchWeather = async (city, key) => {
       try {
         const response = await axios.get(
-          `http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`
+          `https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}`
         );
         setWeatherData((prev) => ({ ...prev, [city]: response.data }));
         console.log(weatherData);
