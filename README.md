@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 CryptoWeather Nexus
 
-## Getting Started
+CryptoWeather Nexus is a sleek and responsive web application that combines **weather forecasts**, **cryptocurrency pricing**, and **global news** into a unified dashboard. Built using **Next.js**, this platform offers real-time insights and interactive visuals powered by modern APIs and intuitive design.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- 🔍 **Search and View Weather**: Get real-time weather data for any city with historical metrics.
+- 💰 **Crypto Prices & Charts**: View live and historical prices of cryptocurrencies with advanced metrics.
+- 📰 **Latest News**: Stay updated with categorized news from reliable sources.
+- ⭐ **Favorites System**: Add weather cities and cryptocurrencies to your favorites for quick access.
+- 📊 **Interactive Charts**: View line charts for historical pricing (Recharts).
+- ✅ **Toast Notifications**: Smooth UX interactions using React Toastify.
+- 🌙 **Dark Theme**: Stylish and modern UI with dark mode enabled.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Notifications**: [React Toastify](https://fkhadra.github.io/react-toastify/)
+- **Charts**: [Recharts](https://recharts.org/)
+- **Styling**: Tailwind CSS
+- **APIs**:
+  - 🌦️ [Weather API](https://www.weatherapi.com/)
+  - 💹 [CoinCap API](https://docs.coincap.io/)
+  - 🗞️ [NewsData API](https://newsdata.io/)
+
+---
+
+## 🧱 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+public/
+src/
+├── app/
+│   ├── components/       # Main dashboard
+│   ├── cryptodetails/  # City detail pages
+│   ├── weatherdetails/   # Crypto detail pages
+├── redux/
+
 ```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tech Stack
+```bash
+git clone https://github.com/your-username/cryptoweather-nexus.git
+cd cryptoweather-nexus
+```
+```bash
+npm install
+```
+```bash
+npm install
+```
